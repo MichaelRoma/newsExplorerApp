@@ -18,6 +18,7 @@
 		D32E6D662A8392F30038A391 /* TimePeriodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32E6D652A8392F30038A391 /* TimePeriodViewController.swift */; };
 		D32E6D682A839B240038A391 /* ArticleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32E6D672A839B240038A391 /* ArticleDetailViewController.swift */; };
 		D32E6D6A2A839D470038A391 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32E6D692A839D470038A391 /* ImageLoader.swift */; };
+		D32E6D6C2A83CF940038A391 /* ListViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32E6D6B2A83CF940038A391 /* ListViewViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		D32E6D652A8392F30038A391 /* TimePeriodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePeriodViewController.swift; sourceTree = "<group>"; };
 		D32E6D672A839B240038A391 /* ArticleDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailViewController.swift; sourceTree = "<group>"; };
 		D32E6D692A839D470038A391 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		D32E6D6B2A83CF940038A391 /* ListViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,12 +68,10 @@
 		D32E6D482A823C850038A391 /* newsExplorerApp */ = {
 			isa = PBXGroup;
 			children = (
-				D32E6D4D2A823C850038A391 /* ArticleListViewController.swift */,
-				D32E6D672A839B240038A391 /* ArticleDetailViewController.swift */,
-				D32E6D692A839D470038A391 /* ImageLoader.swift */,
-				D32E6D5E2A823E5B0038A391 /* NewsAPIService.swift */,
-				D32E6D602A8240BD0038A391 /* APIResponse.swift */,
-				D32E6D652A8392F30038A391 /* TimePeriodViewController.swift */,
+				D32E6D6E2A83D1FA0038A391 /* Controllers */,
+				D32E6D702A83D20F0038A391 /* Model */,
+				D32E6D6D2A83D1ED0038A391 /* View */,
+				D32E6D6F2A83D2060038A391 /* Network */,
 				D32E6D642A8386650038A391 /* Extension */,
 				D32E6D5D2A823E230038A391 /* Supported Files */,
 				D32E6D572A823C860038A391 /* Info.plist */,
@@ -96,6 +96,41 @@
 				D32E6D622A83864E0038A391 /* Extension+UIViewController.swift */,
 			);
 			name = Extension;
+			sourceTree = "<group>";
+		};
+		D32E6D6D2A83D1ED0038A391 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D32E6D6B2A83CF940038A391 /* ListViewViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D32E6D6E2A83D1FA0038A391 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D32E6D4D2A823C850038A391 /* ArticleListViewController.swift */,
+				D32E6D672A839B240038A391 /* ArticleDetailViewController.swift */,
+				D32E6D652A8392F30038A391 /* TimePeriodViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D32E6D6F2A83D2060038A391 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				D32E6D692A839D470038A391 /* ImageLoader.swift */,
+				D32E6D5E2A823E5B0038A391 /* NewsAPIService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		D32E6D702A83D20F0038A391 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D32E6D602A8240BD0038A391 /* APIResponse.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +212,7 @@
 				D32E6D662A8392F30038A391 /* TimePeriodViewController.swift in Sources */,
 				D32E6D682A839B240038A391 /* ArticleDetailViewController.swift in Sources */,
 				D32E6D5F2A823E5B0038A391 /* NewsAPIService.swift in Sources */,
+				D32E6D6C2A83CF940038A391 /* ListViewViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
